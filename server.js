@@ -16,7 +16,8 @@ This is essential for web applications, as browsers typically enforce the same-o
 */
 const cors = require('cors');
 const app = express();
-const port = process.env.PORT || 3000;
+//previous port number is const port = 3000; I changed this to apply on GitHub pages deployment 
+const port = process.env.PORT || 3000;// new port se up according to the environment variable if it exists.
 
 app.use(express.json());
 app.use(cors());
