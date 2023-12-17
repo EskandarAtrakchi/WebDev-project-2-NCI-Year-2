@@ -395,3 +395,23 @@ footer {
     background-color: #804444;
     font-size: large;
 }
+
+/* styling the info table start here */
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    padding-left: 5%;
+    margin-top: 20px;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  th {
+    background-color: #805151;
+  }
+  tr:hover {
+    background-color: #944b4b;
+  }
