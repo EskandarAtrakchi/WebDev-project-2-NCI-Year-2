@@ -8,7 +8,7 @@
     <!--linking the css styling sheet here -->
     <link rel="stylesheet" href="style.css" /> <!-- linking the main.js here -->
     <script src="main.js"></script>
-    <title>Info Page</title>
+    <title>Documentation Page</title>
 </head>
 
 <body onload="checkingInternetStatus ()"> <img src="https://cliply.co/wp-content/uploads/2021/02/372102230_BITCOIN_400px.gif" class="logo" alt="Logo" /> <input type="checkbox" name="checkbox" class="switch" id="darkModeCheckbox" />
@@ -25,7 +25,7 @@
     </script> <!-- marquee here -->
     <marquee>Discover Innovation Unfolding – Where Real Time Prices Meets The Financial Technology!</marquee> <!-- I will use div to create a simple space -->
     <div style="padding-bottom: 0.009%;"></div> <!-- nav bar here -->
-    <div class="topnav"> <a href="index.html">Home</a> <a href="listings.html">Listings</a> <a href="ticker.html">Ticker</a> <a href="info.html" class="split" id="active">Documentation</a> </div>
+    <div class="topnav"> <a href="index.html">Home</a> <a href="listings.html">Listings</a> <a href="ticker.html">Ticker</a> <a href="documentation.html" class="split" id="active">Documentation</a> </div>
     <!--Content here -->
     <div style="padding-left:5%;">
         <section>
@@ -281,7 +281,7 @@
                     <li>Route 1: / (Index)<br> Returns a JSON response with a "tested! Index is working." message to check if the server is running.</li>
                     <li>Route 2: /ticker<br> Asynchronously fetches data from the external API endpoint <a href="https://api.alternative.me/v1/ticker/" style="color:rgb(0, 255, 68)"  >https://api.alternative.me/v1/ticker/</a> using Axios. Responds with the retrieved JSON data or returns an error message in case of an issue.</li>
                     <li>Route 3: /listings<br> Asynchronously fetches data from the external API endpoint <a href="https://api.alternative.me/v2/listings/" style="color:rgb(0, 255, 68)"  >https://api.alternative.me/v2/listings/</a> using Axios. Responds with the retrieved JSON data or returns an error message in case of an issue.</li>
-                    <li>Route 4: /info<br> Similar to the listings route.</li>
+                    <li>Route 4: /documentation<br> Similar to the listings route.</li>
                 </ol>
                 <p><strong>Notes:</strong> The server is designed to handle asynchronous operations, ensuring non-blocking execution. Axios is used to simplify making HTTP requests to external APIs and handling responses. CORS middleware is essential for allowing cross-origin requests, and efforts are made to ensure the server provides a straightforward way to test its functionality and check if it's operational.</p>
             </li>
@@ -292,7 +292,7 @@
                 <li>
                     <h3>Express.js</h3>
                     <p>A. Purpose: Framework for Node.js providing features to build the application.</p>
-                    <p>B. Usage: Used to handle routes for different endpoints ("/", "/ticker", "/listings", "/info"), enabling the server to respond with JSON data.</p>
+                    <p>B. Usage: Used to handle routes for different endpoints ("/", "/ticker", "/listings", "/documentation"), enabling the server to respond with JSON data.</p>
                 </li>
                 <li>
                     <h3>Axios</h3>
@@ -458,7 +458,7 @@
                 </li>
                 <li>
                     <h3>Data Presentation</h3>
-                    <p>The JSON format received from the external server is manipulated to present it to the user. Different routes are available for obtaining general information ("/"), ticker data ("/ticker"), cryptocurrency listings ("/listings"), and additional information ("/info").</p>
+                    <p>The JSON format received from the external server is manipulated to present it to the user. Different routes are available for obtaining general information ("/"), ticker data ("/ticker"), cryptocurrency listings ("/listings"), and additional information ("/documentation").</p>
                 </li>
                 <li>
                     <h3>Fear and Greed Index Display</h3>
@@ -503,7 +503,7 @@
             <li> The port of 3000 is not available as the previous port was <strong>const port = 3000;</strong> </li>
             <li> The new port is <strong>const port = process.env.PORT || 3000;</strong> This means new port set up according to the environment variable if it exists because GitHub pages does not run on port 3000 </li>
         </ol>
-        <h1>Conclusion</h1> In coclusion, the website is accessible online by anyone who is interested about the crypto market, prices, volume, market cap, and the fear and greed index of the whole crypto market. <br> The website was build using HTML, CSS, and JavaScript, the website is using Node.js for server-side JavaScript code execution, Express.js is used to handle the routes and to respond to different endpoints, axios is used to make HTTP requests to external APIs, and CORS is used to enable cross-origin sharing, using this to allow the server to handle requests from different origins. <br> The website is using Chart.js to generate the charts and the charts are generated based on the user input, providing a clean and interactive way to represent data. <br> The website is using JSON format to present the data to the user, and the JSON format received from the external server is manipulated to present it to the user. Different routes are available index-page ("/"), ticker data ("/ticker"), cryptocurrency listings ("/listings"), and Documentation ("/info").
+        <h1>Conclusion</h1> In coclusion, the website is accessible online by anyone who is interested about the crypto market, prices, volume, market cap, and the fear and greed index of the whole crypto market. <br> The website was build using HTML, CSS, and JavaScript, the website is using Node.js for server-side JavaScript code execution, Express.js is used to handle the routes and to respond to different endpoints, axios is used to make HTTP requests to external APIs, and CORS is used to enable cross-origin sharing, using this to allow the server to handle requests from different origins. <br> The website is using Chart.js to generate the charts and the charts are generated based on the user input, providing a clean and interactive way to represent data. <br> The website is using JSON format to present the data to the user, and the JSON format received from the external server is manipulated to present it to the user. Different routes are available index-page ("/"), ticker data ("/ticker"), cryptocurrency listings ("/listings"), and Documentation ("/documentation").
         <br>
         The designing and CSS styling of the page was implemented from ready libraries that are useful and time saving.
         <br>

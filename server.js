@@ -1,12 +1,12 @@
 /*
-express handles routes for different endpoints ("/", "/ticker", "/listings", "/info").
+express handles routes for different endpoints ("/", "/ticker", "/listings", "/documentation").
 It enables the server to respond with JSON data and handle external API requests using Axios.
 */
 const express = require('express');
 /*
 Axios is used to make HTTP requests to external APIs (https://api.alternative.me/v1/ticker/ and https://api.alternative.me/v2/listings/).
 It simplifies the process of fetching data from these external APIs asynchronously.
-The responses from these requests are then used to send JSON data back to clients accessing specific routes in the Express application (/ticker, /listings, /info).
+The responses from these requests are then used to send JSON data back to clients accessing specific routes in the Express application (/ticker, /listings, /documentation).
 */
 const axios = require('axios');
 /*
@@ -57,8 +57,8 @@ app.get('/listings', async (req, res) => {
     }
 });
 
-//route number four info 
-app.get('/info', async (req, res) => {
+//route number four documentation
+app.get('/documentation', async (req, res) => {
     try {
         //wait for axios to get the API response 
         const response = await axios.get('https://api.alternative.me/v2/listings/');
