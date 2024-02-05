@@ -1,5 +1,6 @@
 # Home Page Explained
 
+## This API is taken from Alternative.me (https://alternative.me/crypto/fear-and-greed-index/)
 The Fear and Greed Index is designed to provide a better understanding of the current market sentiment, assisting you in making more informed decisions. The index ranges from 0 to 100, where zero signifies "Extreme Fear," and 100 indicates "Extreme Greed." Updates are made every hour, and the index on this website is calculated using the following API: [Fear and Greed Index API](https://api.alternative.me/fng/).
 
 Images of the Fear and Greed Index are also available, sourced from the same website using the following APIs:
