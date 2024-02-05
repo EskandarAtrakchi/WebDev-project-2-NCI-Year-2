@@ -1,3 +1,9 @@
+/**
+ * Fetches and loads fear and greed index data from the specified URL.
+ * Displays the data in a div element with the id "fearAndGreedDiv".
+ * @param {string} url - The URL to fetch the data from.
+ * @returns {Promise<void>} - A promise that resolves when the data is loaded and displayed.
+ */
 //===================================
 
 //function number 1 fetching data for fear and greed index 
@@ -41,6 +47,10 @@ async function loadFearAndGreedData(url) {
 
 //===================================
 
+/**
+ * Loads crypto data based on user input and displays it in a chart.
+ * @returns {Promise<void>} A promise that resolves when the crypto data is loaded and displayed.
+ */
   async function loadCryptoData() {
     //grab the element search Input
     var searchInput = document.getElementById('searchInput');
@@ -136,6 +146,10 @@ async function loadFearAndGreedData(url) {
 
 //===================================
 
+/**
+ * Loads ticker data based on user input and displays it in a table and chart.
+ * @returns {Promise<void>} A promise that resolves when the ticker data is loaded and displayed.
+ */
 async function loadTickerData() {
     //grab the element search Input
     var searchInput = document.getElementById('searchInput');
