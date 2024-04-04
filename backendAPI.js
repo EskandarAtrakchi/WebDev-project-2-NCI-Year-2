@@ -62,7 +62,7 @@ async function loadFearAndGreedData(url) {
     } else {//otherwise 
         try {
             // Fetch data from server-side proxy
-            const response = await fetch('https://backend-api-server-tbrq.onrender.com/listings/');
+            const response = await fetch('http://localhost:3000/listings/');
             const data = await response.json();//await for the data JSON format 
 
             // Process and display data as needed
@@ -165,7 +165,7 @@ async function loadTickerData() {
             document.getElementById('tickerPricesTextInfo').innerHTML = 'This is the retrieved data, you can request multiple coins or tokens by separating them with a space.\nExample; XRP NEAR BTC ETH';
             document.getElementById('tickerChartInfo').innerHTML = 'Data retrieved from the API is represented here in a bar chart.';
 
-            const response = await fetch('https://backend-api-server-tbrq.onrender.com/ticker/');// Fetch data from server-side proxy
+            const response = await fetch('https://backend-api-server-tbrq.onrender.com/ticker.html');// Fetch data from server-side proxy
             const result = await response.json();// JSON response from server-side proxy
             const data = result && result.length ? result : [];// JSON response from server-side proxy and data length is not specified here 
 
