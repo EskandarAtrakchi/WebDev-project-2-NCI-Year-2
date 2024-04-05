@@ -275,5 +275,3 @@ async function loadTickerData() {
         }
     }
 }
-
-
